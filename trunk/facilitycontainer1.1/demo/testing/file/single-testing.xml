@@ -1,0 +1,44 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+
+<ct:components xmlns:ct = "http://xiaochen-su.javaeye.com/fc">
+	<component id = "ts" class = "demo.component.UserModel" single = "false">
+		<constructor>
+			<property>
+				<int>1</int>
+			</property>
+			<property>
+				<string>name</string>
+			</property>
+			<property>
+				<string>password</string>
+			</property>
+			<property>
+				<string>xiaochen_su@126.com</string>
+			</property>
+		</constructor>
+	</component>
+	
+	<component id = "reftsC" class = "demo.component.RefUserModel" single = "false">
+		<constructor>
+			<property>
+				<ref>ts</ref>
+			</property>
+		</constructor>
+	</component>
+	
+	<component id = "reftsS" class = "demo.component.RefUserModel" single = "false">
+		<setter	name = "userModel">
+			<property>
+				<ref>ts</ref>
+			</property>
+		</setter>
+	</component>
+	
+	<component id = "reftsM" class = "demo.component.RefUserModel" single = "false">
+		<method name = "setUserModel">	
+			<property>
+				<ref>ts</ref>
+			</property>
+		</method>
+	</component>
+</ct:components>

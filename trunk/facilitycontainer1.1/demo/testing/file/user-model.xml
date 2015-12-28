@@ -1,0 +1,45 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+
+<um:components xmlns:um = "http://xiaochen-su.javaeye.com/fc">
+	<!-- 测试构造函数列表为null但通过ConstructorComponentScarfskin构造组件 -->
+	<component id = "um_0/" class = "demo.component.UserModel">
+		<setter name = "id">
+			<property>
+				<int>1100</int>
+			</property>
+		</setter>
+		
+		<setter name = "userName">
+			<property><string>用户名 - 你好世界</string></property>
+		</setter>
+		
+		<setter name = "password">
+			<property><string>密码 - 世界你好</string></property>
+		</setter>
+		
+		<setter name = "email">
+			<property><string>电子邮件 - 世界你好@HelloWorld.com</string></property>
+		</setter>
+		
+				<method name = "print">
+			<property>
+				<ref>out</ref>
+			</property>
+			<property>
+				<string>上下文打印信息</string>
+			</property>
+		</method>
+		
+		<method name = "print"/>
+	
+	</component>
+	
+	<component id = "out" class = "java.io.PrintStream">
+		<constructor>
+			<property>
+				<string>/home/suchen/files/user model.txt</string>
+			</property>
+		</constructor>
+	</component>
+
+</um:components>

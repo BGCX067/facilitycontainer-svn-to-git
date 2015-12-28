@@ -1,0 +1,126 @@
+
+	private static final String STACK_TRACE_ROOT = "components";
+	private static final String STACK_TRACE_1 = "[components, compoennt]";
+//	----------------------------------
+	private static final String STACK_TRACE_2 = "[components, component, constructor]";
+	private static final String STACK_TRACE_3 = "[components, component, constructor, property]";
+	private static final String STACK_TRACE_4 = "[components, component, constructor, property, short]";
+	private static final String STACK_TRACE_5 = "[components, component, constructor, property, int]";
+	private static final String STACK_TRACE_6 = "[components, component, constructor, property, long]";
+	private static final String STACK_TRACE_7 = "[components, component, constructor, property, float]";
+	private static final String STACK_TRACE_8 = "[components, component, constructor, property, double]";
+	private static final String STACK_TRACE_9 = "[components, component, constructor, property, boolean]";
+	private static final String STACK_TRACE_10 = "[components, component, constructor, property, string]";
+
+	private static final String STACK_TRACE_11 = "[components, component, constructor, property, ref]";
+
+	private static final String STACK_TRACE_12 = "[components, component, constructor, property, map]";
+	private static final String STACK_TRACE_13 = "[components, component, constructor, property, map, key]";
+	private static final String STACK_TRACE_14 = "[components, component, constructor, property, map, key, string]";
+	private static final String STACK_TRACE_15 = "[components, component, constructor, property, map, key, ref]";
+
+	private static final String STACK_TRACE_16 = "[components, component, constructor, property, set]";
+	private static final String STACK_TRACE_17 = "[components, component, constructor, property, set, item]";
+	private static final String STACK_TRACE_18 = "[components, component, constructor, property, set, item, string]";
+	private static final String STACK_TRACE_19 = "[components, component, constructor, property, set, item, ref]";
+
+	private static final String STACK_TRACE_20 = "[components, component, constructor, property, list]";
+	private static final String STACK_TRACE_21 = "[components, component, constructor, property, list, item]";
+	private static final String STACK_TRACE_22 = "[components, component, constructor, property, list, item, string]";
+	private static final String STACK_TRACE_23 = "[components, component, constructor, property, list, item, ref]";
+
+	private static final String STACK_TRACE_24 = "[components, component, constructor, property, array]";
+	private static final String STACK_TRACE_25 = "[components, component, constructor, property, array, item]";
+	private static final String STACK_TRACE_26 = "[components, component, constructor, property, array, item, string]";
+	private static final String STACK_TRACE_27 = "[components, component, constructor, property, array, item, ref]";
+
+//		----------------------------------
+
+	private static final String STACK_TRACE_28 = "[components, component, setter]";
+	private static final String STACK_TRACE_29 = "[components, component, setter, property]";
+	private static final String STACK_TRACE_30 = "[components, component, setter, property, short]";
+	private static final String STACK_TRACE_31 = "[components, component, setter, property, int]";
+	private static final String STACK_TRACE_32 = "[components, component, setter, property, long]";
+	private static final String STACK_TRACE_33 = "[components, component, setter, property, float]";
+	private static final String STACK_TRACE_34 = "[components, component, setter, property, double]";
+	private static final String STACK_TRACE_35 = "[components, component, setter, property, boolean]";
+	private static final String STACK_TRACE_36 = "[components, component, setter, property, string]";
+
+	private static final String STACK_TRACE_37 = "[components, component, setter, property, ref]";
+
+	private static final String STACK_TRACE_38 = "[components, component, setter, property, map]";
+	private static final String STACK_TRACE_39 = "[components, component, setter, property, map, key]";
+	private static final String STACK_TRACE_40 = "[components, component, setter, property, map, key, string]";
+	private static final String STACK_TRACE_41 = "[components, component, setter, property, map, key, ref]";
+
+	private static final String STACK_TRACE_42 = "[components, component, setter, property, set]";
+	private static final String STACK_TRACE_43 = "[components, component, setter, property, set, item]";
+	private static final String STACK_TRACE_44 = "[components, component, setter, property, set, item, string]";
+	private static final String STACK_TRACE_45 = "[components, component, setter, property, set, item, ref]";
+
+	private static final String STACK_TRACE_46 = "[components, component, setter, property, list]";
+	private static final String STACK_TRACE_47 = "[components, component, setter, property, list, item]";
+	private static final String STACK_TRACE_48 = "[components, component, setter, property, list, item, string]";
+	private static final String STACK_TRACE_49 = "[components, component, setter, property, list, item, ref]";
+
+	private static final String STACK_TRACE_50 = "[components, component, setter, property, array]";
+	private static final String STACK_TRACE_51 = "[components, component, setter, property, array, item]";
+	private static final String STACK_TRACE_52 = "[components, component, setter, property, array, item, string]";
+	private static final String STACK_TRACE_53 = "[components, component, setter, property, array, item, ref]";
+
+//		----------------------------------
+
+	private static final String STACK_TRACE_54 = "[components, component, method]";
+	private static final String STACK_TRACE_55 = "[components, component, method, property]";
+	private static final String STACK_TRACE_56 = "[components, component, method, property, short]";
+	private static final String STACK_TRACE_57 = "[components, component, method, property, int]";
+	private static final String STACK_TRACE_58 = "[components, component, method, property, long]";
+	private static final String STACK_TRACE_59 = "[components, component, method, property, float]";
+	private static final String STACK_TRACE_60 = "[components, component, method, property, double]";
+	private static final String STACK_TRACE_61 = "[components, component, method, property, boolean]";
+	private static final String STACK_TRACE_62 = "[components, component, method, property, string]";
+
+	private static final String STACK_TRACE_63 = "[components, component, method, property, ref]";
+
+	private static final String STACK_TRACE_64 = "[components, component, method, property, map]";
+	private static final String STACK_TRACE_65 = "[components, component, method, property, map, key]";
+	private static final String STACK_TRACE_66 = "[components, component, method, property, map, key, string]";
+	private static final String STACK_TRACE_67 = "[components, component, method, property, map, key, ref]";
+
+	private static final String STACK_TRACE_68 = "[components, component, method, property, set]";
+	private static final String STACK_TRACE_69 = "[components, component, method, property, set, item]";
+	private static final String STACK_TRACE_70 = "[components, component, method, property, set, item, string]";
+	private static final String STACK_TRACE_71 = "[components, component, method, property, set, item, ref]";
+
+	private static final String STACK_TRACE_72 = "[components, component, method, property, list]";
+	private static final String STACK_TRACE_73 = "[components, component, method, property, list, item]";
+	private static final String STACK_TRACE_74 = "[components, component, method, property, list, item, string]";
+	private static final String STACK_TRACE_75 = "[components, component, method, property, list, item, ref]";
+
+	private static final String STACK_TRACE_76 = "[components, component, method, property, array]";
+	private static final String STACK_TRACE_77 = "[components, component, method, property, array, item]";
+	private static final String STACK_TRACE_78 = "[components, component, method, property, array, item, string]";
+	private static final String STACK_TRACE_79 = "[components, component, method, property, array, item, ref]";
+
+	private static final String[] STACK_TRACE_GROUP = new String[] {
+			STACK_TRACE_ROOT, STACK_TRACE_1, STACK_TRACE_2, STACK_TRACE_3,
+			STACK_TRACE_4, STACK_TRACE_5, STACK_TRACE_6, STACK_TRACE_7,
+			STACK_TRACE_8, STACK_TRACE_9, STACK_TRACE_10, STACK_TRACE_11,
+			STACK_TRACE_12, STACK_TRACE_13, STACK_TRACE_14, STACK_TRACE_15,
+			STACK_TRACE_16, STACK_TRACE_17, STACK_TRACE_18, STACK_TRACE_19,
+			STACK_TRACE_20, STACK_TRACE_21, STACK_TRACE_22, STACK_TRACE_23,
+			STACK_TRACE_24, STACK_TRACE_25, STACK_TRACE_26, STACK_TRACE_27,
+			STACK_TRACE_28, STACK_TRACE_29, STACK_TRACE_30, STACK_TRACE_31,
+			STACK_TRACE_32, STACK_TRACE_33, STACK_TRACE_34, STACK_TRACE_35,
+			STACK_TRACE_36, STACK_TRACE_37, STACK_TRACE_38, STACK_TRACE_39,
+			STACK_TRACE_40, STACK_TRACE_41, STACK_TRACE_42, STACK_TRACE_43,
+			STACK_TRACE_44, STACK_TRACE_45, STACK_TRACE_46, STACK_TRACE_47,
+			STACK_TRACE_48, STACK_TRACE_49, STACK_TRACE_50, STACK_TRACE_51,
+			STACK_TRACE_52, STACK_TRACE_53, STACK_TRACE_54, STACK_TRACE_55,
+			STACK_TRACE_56, STACK_TRACE_57, STACK_TRACE_58, STACK_TRACE_59,
+			STACK_TRACE_60, STACK_TRACE_61, STACK_TRACE_62, STACK_TRACE_63,
+			STACK_TRACE_64, STACK_TRACE_65, STACK_TRACE_66, STACK_TRACE_67,
+			STACK_TRACE_68, STACK_TRACE_69, STACK_TRACE_70, STACK_TRACE_71,
+			STACK_TRACE_72, STACK_TRACE_73, STACK_TRACE_74, STACK_TRACE_75,
+			STACK_TRACE_76, STACK_TRACE_77, STACK_TRACE_78, STACK_TRACE_79,
+			};

@@ -1,0 +1,274 @@
+<?xml version = "1.0" encoding="utf-8"?>
+
+<ctb:components xmlns:ctb="http://xiaochen-su.javaeye.com/fc">
+	<component id="createDate" class="java.util.Date" />
+
+	<!-- 重复出现 带有基本类型的集合参数测试 - setter -->
+	<component id="ctb_5" class="demo.component.CTBModel">
+		<setter name = "map">
+			<property>
+				<map>
+					<key name="int">
+						<int>123123</int>
+					</key>
+					<key name="short">
+						<short>2</short>
+					</key>
+					<key name="long">
+						<long>3</long>
+					</key>
+
+					<key name="float">
+						<float>1.1</float>
+					</key>
+					<key name="double">
+						<double>2.2</double>
+					</key>
+
+					<key name="boolean">
+						<boolean>true</boolean>
+					</key>
+
+					<key name="string">
+						<string>map-str</string>
+					</key>
+					<key name="date">
+						<ref>createDate</ref>
+					</key>
+				</map>
+			</property>
+		</setter>
+		<setter name = "map1">
+			<property>
+				<map>
+					<key name="int">
+						<int>1</int>
+					</key>
+					<key name="short">
+						<short>2</short>
+					</key>
+					<key name="long">
+						<long>3</long>
+					</key>
+
+					<key name="float">
+						<float>1.1</float>
+					</key>
+					<key name="double">
+						<double>2.2</double>
+					</key>
+
+					<key name="boolean">
+						<boolean>true</boolean>
+					</key>
+
+					<key name="string">
+						<string>map-str</string>
+					</key>
+					<key name="date">
+						<ref>createDate</ref>
+					</key>
+				</map>
+			</property>
+		</setter>
+		<setter name = "set">
+			<property>
+				<set>
+					<item>
+						<int>11</int>
+					</item>
+					<item>
+						<short>22</short>
+					</item>
+					<item>
+						<long>33</long>
+					</item>
+
+					<item>
+						<float>11.1</float>
+					</item>
+					<item>
+						<double>22.2</double>
+					</item>
+
+					<item>
+						<boolean>false</boolean>
+					</item>
+
+					<item>
+						<string>set-str</string>
+					</item>
+					<item>
+						<ref>createDate</ref>
+					</item>
+				</set>
+			</property>
+		</setter>
+		<setter name = "set1">
+			<property>
+				<set>
+					<item>
+						<int>11</int>
+					</item>
+					<item>
+						<short>22</short>
+					</item>
+					<item>
+						<long>33</long>
+					</item>
+
+					<item>
+						<float>11.1</float>
+					</item>
+					<item>
+						<double>22.2</double>
+					</item>
+
+					<item>
+						<boolean>false</boolean>
+					</item>
+
+					<item>
+						<string>set-str</string>
+					</item>
+					<item>
+						<ref>createDate</ref>
+					</item>
+				</set>
+			</property>
+		</setter>
+		<setter name = "list">
+			<property>
+				<list>
+					<item>
+						<int>11</int>
+					</item>
+					<item>
+						<short>22</short>
+					</item>
+					<item>
+						<long>33</long>
+					</item>
+
+					<item>
+						<float>11.1</float>
+					</item>
+					<item>
+						<double>22.2</double>
+					</item>
+
+					<item>
+						<boolean>false</boolean>
+					</item>
+
+					<item>
+						<string>list-str</string>
+					</item>
+					<item>
+						<ref>createDate</ref>
+					</item>
+				</list>
+			</property>
+		</setter>
+		<setter name = "list1">
+			<property>
+				<list>
+					<item>
+						<int>11</int>
+					</item>
+					<item>
+						<short>22</short>
+					</item>
+					<item>
+						<long>33</long>
+					</item>
+
+					<item>
+						<float>11.1</float>
+					</item>
+					<item>
+						<double>22.2</double>
+					</item>
+
+					<item>
+						<boolean>false</boolean>
+					</item>
+
+					<item>
+						<string>list-str</string>
+					</item>
+					<item>
+						<ref>createDate</ref>
+					</item>
+				</list>
+			</property>
+		</setter>
+		<setter name = "array">
+			<property>
+				<array type="java.lang.Object">
+					<item>
+						<int>123123</int>
+					</item>
+					<item>
+						<short>22</short>
+					</item>
+					<item>
+						<long>33</long>
+					</item>
+
+					<item>
+						<float>11.1</float>
+					</item>
+					<item>
+						<double>22.2</double>
+					</item>
+
+					<item>
+						<boolean>false</boolean>
+					</item>
+
+					<item>
+						<string>array-str</string>
+					</item>
+					<item>
+						<ref>createDate</ref>
+					</item>
+				</array>
+			</property>
+		</setter>
+		<setter name = "array1">
+			<property>
+				<array type="java.lang.Object">
+					<item>
+						<int>11</int>
+					</item>
+					<item>
+						<short>2333</short>
+					</item>
+					<item>
+						<long>33</long>
+					</item>
+
+					<item>
+						<float>11.1</float>
+					</item>
+					<item>
+						<double>22.2</double>
+					</item>
+
+					<item>
+						<boolean>false</boolean>
+					</item>
+
+					<item>
+						<string>array-str</string>
+					</item>
+					<item>
+						<ref>createDate</ref>
+					</item>
+				</array>
+			</property>
+		
+		</setter>
+	</component>
+</ctb:components>

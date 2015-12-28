@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema 
+	xmlns:xsd = "http://www.w3.org/2001/XMLSchema" 
+	xmlns:fc = "http://xiaochen-su.javaeye.com/fc"
+	targetNamespace = "http://xiaochen-su.javaeye.com/fc"
+>
+	
+	<xsd:simpleType name = "single_type">
+		<xsd:restriction base = "xsd:boolean" >
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name = "id_type">
+		<xsd:restriction base = "xsd:string">
+			<xsd:pattern value = "([a-zA-Z_$0-9/])*"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name = "ref_type">
+		<xsd:restriction base = "xsd:string">
+			<xsd:pattern value = "([a-zA-Z_$0-9/])*"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name = "class_type">
+		<xsd:restriction base = "xsd:string">
+			<xsd:pattern value = "([a-z]|[A-Z]|[_]|[$])([a-zA-Z_$0-9.])*"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name = "methodname_type">
+		<xsd:restriction base = "xsd:string">
+			<xsd:pattern value = "([a-z]|[A-Z]|[_]|[$])([a-zA-Z_$0-9])*"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:complexType name = "import_type">
+		<xsd:attribute name = "name" type = "fc:id_type" use = "required"/>
+		<xsd:attribute name = "url" type = "xsd:string" use = "required"/>
+	</xsd:complexType>
+		
+	<xsd:complexType name = "key_type">
+		<xsd:choice>			
+			<xsd:element name = "string" type = "xsd:string" minOccurs = "0" maxOccurs = "1"/>
+			<xsd:element name = "ref" type = "fc:ref_type" minOccurs = "0" maxOccurs = "1"/>
+			
+			<xsd:element name = "short" type = "xsd:short" minOccurs = "0" maxOccurs = "1"/>
+			<xsd:element name = "int" type = "xsd:integer" minOccurs = "0" maxOccurs = "1"/>
+			<xsd:element name = "long" type = "xsd:long" minOccurs = "0" maxOccurs = "1"/>
+			
+			<xsd:element name = "float" type = "xsd:float" minOccurs = "0" maxOccurs = "1"/>
+			<xsd:element name = "double" type = "xsd:double" minOccurs = "0" maxOccurs = "1"/>
+			
+			<xsd:element name = "boolean" type = "xsd:boolean" minOccurs = "0" maxOccurs = "1"/>
+		</xsd:choice>
+		
+		<xsd:attribute name = "name" type = "xsd:string" use = "required"/> 
+	</xsd:complexType>
+	
+	<xsd:complexType name = "item_type">
+		<xsd:choice>
+			<xsd:element name = "string" type = "xsd:string" minOccurs = "0" maxOccurs = "1"/>
+			<xsd:element name = "ref" type = "fc:ref_type" minOccurs = "0" maxOccurs = "1"/>
+			
+			<xsd:element name = "short" type = "xsd:short" minOccurs = "0" maxOccurs = "1"/>
+			<xsd:element name = "int" type = "xsd:integer" minOccurs = "0" maxOccurs = "1"/>
+			<xsd:element name = "long" type = "xsd:long" minOccurs = "0" maxOccurs = "1"/>
+			
+			<xsd:element name = "float" type = "xsd:float" minOccurs = "0" maxOccurs = "1"/>
+			<xsd:element name = "double" type = "xsd:double" minOccurs = "0" maxOccurs = "1"/>
+			
+			<xsd:element name = "boolean" type = "xsd:boolean" minOccurs = "0" maxOccurs = "1"/>
+		</xsd:choice>
+	</xsd:complexType>
+	
+	<xsd:complexType name = "map_type">
+		<xsd:sequence>
+			<xsd:element name = "key" type = "fc:key_type" minOccurs = "0" maxOccurs = "unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:complexType name = "listandset_type">
+		<xsd:sequence>
+			<xsd:element name = "item" type = "fc:item_type" minOccurs = "0" maxOccurs = "unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+		
+	<xsd:complexType name = "array_type">
+		<xsd:sequence>
+			<xsd:element name = "item" type = "fc:item_type" minOccurs = "0" maxOccurs = "unbounded"/>
+		</xsd:sequence>
+		
+		<xsd:attribute name = "type" type = "xsd:string" default = "object"/>
+	</xsd:complexType>
+	
+	<xsd:complexType name = "property_type">
+		<xsd:choice>
+			<xsd:element name = "short" type = "xsd:short" minOccurs = "0" maxOccurs = "1"/>
+			<xsd:element name = "int" type = "xsd:integer" minOccurs = "0" maxOccurs = "1"/>
+			<xsd:element name = "long" type = "xsd:long" minOccurs = "0" maxOccurs = "1"/>
+			
+			<xsd:element name = "float" type = "xsd:float" minOccurs = "0" maxOccurs = "1"/>
+			<xsd:element name = "double" type = "xsd:double" minOccurs = "0" maxOccurs = "1"/>
+			
+			<xsd:element name = "string" type = "xsd:string" minOccurs = "0" maxOccurs = "1"/>
+			
+			<xsd:element name = "boolean" type = "xsd:boolean" minOccurs = "0" maxOccurs = "1"/>
+			
+			<xsd:element name = "ref" type = "fc:ref_type" minOccurs = "0" maxOccurs = "1"/>
+			
+			<xsd:element name = "map" type = "fc:map_type" minOccurs = "0" maxOccurs = "1"/>
+			<xsd:element name = "list" type = "fc:listandset_type" minOccurs = "0" maxOccurs = "1"/>
+			<xsd:element name = "array" type = "fc:array_type" minOccurs = "0" maxOccurs = "1"/>
+			<xsd:element name = "set" type = "fc:listandset_type" minOccurs = "0" maxOccurs = "1"/>
+		</xsd:choice>
+	</xsd:complexType>
+	
+	<xsd:complexType name="method_type">
+		<xsd:sequence>
+			<xsd:element name = "property" type = "fc:property_type" minOccurs = "0" maxOccurs = "unbounded"/>
+		</xsd:sequence>
+		
+		<xsd:attribute name = "name" type = "fc:methodname_type" use = "required"/>
+	</xsd:complexType>
+	
+	<xsd:complexType name="setter_type">
+		<xsd:sequence>
+			<xsd:element name = "property" type = "fc:property_type" minOccurs = "1" maxOccurs = "1"/>
+		</xsd:sequence>
+		
+		<xsd:attribute name = "name" type = "fc:methodname_type" use = "required"/>
+	</xsd:complexType>
+	
+	<xsd:complexType name="constructor_type">
+		<xsd:sequence>
+			<xsd:element name = "property" type = "fc:property_type" minOccurs = "0" maxOccurs = "unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:complexType name = "component_type">
+		<xsd:sequence>
+			<xsd:element name = "constructor" type = "fc:constructor_type" minOccurs = "0" maxOccurs = "1"/>
+			<xsd:element name = "setter" type = "fc:setter_type" minOccurs = "0" maxOccurs = "unbounded"/>
+			<xsd:element name = "method" type = "fc:method_type" minOccurs = "0" maxOccurs = "unbounded"/>
+		</xsd:sequence>
+		
+		<xsd:attribute name = "id" type = "fc:id_type" use = "required"/>
+		<xsd:attribute name = "class" type = "fc:class_type" use = "required"/>
+		<xsd:attribute name = "single" type = "xsd:boolean" default = "true" />
+	</xsd:complexType>
+	
+	<xsd:element name = "components">
+		<xsd:complexType>
+			<xsd:sequence>
+				<!-- <xsd:element name = "import" type = "fc:import_type" minOccurs = "0" maxOccurs = "unbounded"/> -->
+				<xsd:element name = "component" type = "fc:component_type" minOccurs = "0" maxOccurs = "unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	
+</xsd:schema>

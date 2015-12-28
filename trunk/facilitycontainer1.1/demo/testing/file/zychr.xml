@@ -1,0 +1,38 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+
+<umc:components xmlns:umc="http://xiaochen-su.javaeye.com/fc">
+	<component id = "http" class = "java.lang.String">
+		<constructor>
+			<property><string>http://localhost:8080/index?name=hello&amp;password=world</string></property>
+		</constructor>
+	</component>
+	
+	<!-- 
+		&lt;			小于号
+		&gt;			大于号
+		&amp;		和
+		&apos;	单引号
+		&quot;	双引号 
+-->
+	<component id = "userModel" class = "demo.component.UserModel">
+		<constructor>
+			<property>
+				<int>2009</int>
+			</property>
+			
+			<property>
+				<string>&amp;http://localhost:8080/index.jsp?name=hello&amp;password=worldd&amp;</string>
+			</property>
+			
+			<property>
+				<string>&gt;http://localhost:8080/index.jsp?name=hello&gt;	password=w&gt;orldd&gt;	</string>
+			</property>
+			
+			<property>
+				<string>&apos;http://localhost:8&quot;080&quot;/index.jsp?name=hel&quot;lo&apos;password=worldd&apos;</string>
+			</property>
+			
+		</constructor>
+	</component>
+	
+</umc:components>

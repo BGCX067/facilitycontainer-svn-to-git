@@ -1,0 +1,453 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+
+<ct:components xmlns:ct = "http://xiaochen-su.javaeye.com/fc">
+	<component id = "createdate" class = "java.util.Date"/>
+	<!--  四种类型, 分别全部出现1次的测试; setter-->
+	<component id = "ct_0" class = "demo.component.CollectionModel">
+		<setter name = "array">
+			<property>
+				<array type = "java.lang.Object">
+					<item><string>str - value</string></item>
+					<item><string>str1 - value</string></item>
+					<item><string>str2 - value</string></item>
+					<item><string>str3 - value</string></item>
+					<item><string>str4 - value</string></item>
+					<item><ref>createdate</ref></item>
+				</array>
+			</property>
+		</setter>
+		
+		<setter name = "set">
+			<property>
+				<set>
+					<item><string>str - value</string></item>
+					<item><string>str1 - value</string></item>
+					<item><string>str2 - value</string></item>
+					<item><string>str3 - value</string></item>
+					<item><string>str4 - value</string></item>
+					<item><ref>createdate</ref></item>
+				</set>
+			</property>
+		</setter>
+	
+		<setter name = "list">
+			<property>
+				<list>
+					<item><string>str - value</string></item>
+					<item><string>str1 - value</string></item>
+					<item><string>str2 - value</string></item>
+					<item><string>str3 - value</string></item>
+					<item><string>str4 - value</string></item>
+					<item><ref>createdate</ref></item>
+				</list>
+			</property>
+		</setter>
+				
+		<setter name = "map">
+			<property>
+				<map>
+					<key name = "str"><string>str - value</string></key>
+					<key name = "str1"><string>str1 - value</string></key>
+					<key name = "str2"><string>str2 - value</string></key>
+					<key name = "str3"><string>str3 - value</string></key>
+					<key name = "str4"><string>str4 - value</string></key>
+					<key name = "createDate"><ref>createdate</ref></key>
+				</map>
+			</property>
+		</setter>
+	</component>
+	
+	<!-- 四种类型, 分别全部出现1次的测试; method -->
+	<component id = "ct_1" class = "demo.component.CollectionModel">
+		<method name = "setArray">
+			<property>
+				<array type = "java.lang.Object">
+					<item><string>method - str - value</string></item>
+					<item><string>method - str1 - value</string></item>
+					<item><string>method - str2 - value</string></item>
+					<item><string>method - str3 - value</string></item>
+					<item><string>method - str4 - value</string></item>
+					<item><ref>createdate</ref></item>
+				</array>
+			</property>
+		</method>
+		
+		<method name = "setSet">
+			<property>
+				<set>
+					<item><string>method - str - value</string></item>
+					<item><string>method - str1 - value</string></item>
+					<item><string>method - str2 - value</string></item>
+					<item><string>method - str3 - value</string></item>
+					<item><string>method - str4 - value</string></item>
+					<item><ref>createdate</ref></item>
+				</set>
+			</property>
+		</method>
+	
+		<method name = "setList">
+			<property>
+				<list>
+					<item><string>method - str - value</string></item>
+					<item><string>method - str1 - value</string></item>
+					<item><string>method - str2 - value</string></item>
+					<item><string>method - str3 - value</string></item>
+					<item><string>method - str4 - value</string></item>
+					<item><ref>createdate</ref></item>
+				</list>
+			</property>
+		</method>
+				
+		<method name = "setMap">
+			<property>
+				<map>
+					<key name = "str"><string>method - str - value</string></key>
+					<key name = "str1"><string>method - str1 - value</string></key>
+					<key name = "str2"><string>method - str2 - value</string></key>
+					<key name = "str3"><string>method - str3 - value</string></key>
+					<key name = "str4"><string>method - str4 - value</string></key>
+					<key name = "createDate"><ref>createdate</ref></key>
+				</map>
+			</property>
+		</method>
+	</component>
+	<!-- 四种类型, 分别全部出现1次的测试; constructor -->
+	<component id = "ct_2" class = "demo.component.CollectionModel">
+		<constructor>
+			<property>
+				<array type = "java.lang.Object">
+					<item><string>constructor - str - value</string></item>
+					<item><string>constructor - str1 - value</string></item>
+					<item><string>constructor - str2 - value</string></item>
+					<item><string>constructor - str3 - value</string></item>
+					<item><string>constructor - str4 - value</string></item>
+					<item><ref>createdate</ref></item>
+				</array>
+			</property>
+			<property>
+				<set>
+					<item><string>constructor - str - value</string></item>
+					<item><string>constructor - str1 - value</string></item>
+					<item><string>constructor - str2 - value</string></item>
+					<item><string>constructor - str3 - value</string></item>
+					<item><string>constructor - str4 - value</string></item>
+					<item><ref>createdate</ref></item>
+				</set>
+			</property>
+
+			<property>
+				<map>
+					<key name = "str"><string>constructor - str - value</string></key>
+					<key name = "str1"><string>constructor - str1 - value</string></key>
+					<key name = "str2"><string>constructor - str2 - value</string></key>
+					<key name = "str3"><string>constructor - str3 - value</string></key>
+					<key name = "str4"><string>constructor - str4 - value</string></key>
+					<key name = "createDate"><ref>createdate</ref></key>
+				</map>
+			</property>
+			
+			<property>
+				<list>
+					<item><string>constructor - str - value</string></item>
+					<item><string>constructor - str1 - value</string></item>
+					<item><string>constructor - str2 - value</string></item>
+					<item><string>constructor - str3 - value</string></item>
+					<item><string>constructor - str4 - value</string></item>
+					<item><ref>createdate</ref></item>
+				</list>
+			</property>
+		</constructor>
+	</component>
+	
+	<!-- 四种集合类型,分别出现多个的测试; 测试constructor -->
+	<component id = "ct_3" class = "demo.component.CollectionModel">
+		<constructor>
+			<property>
+				<array type = "java.lang.Object">
+					<item><string>constructor - array - str - value</string></item>
+					<item><string>constructor - array - str1 - value</string></item>
+					<item><string>constructor - array - str2 - value</string></item>
+					<item><string>constructor - array - str3 - value</string></item>
+					<item><string>constructor - array - str4 - value</string></item>
+					<item><ref>createdate</ref></item>
+				</array>
+			</property>
+			
+			<property>
+				<array type = "java.lang.Object">
+					<item><string>constructor - array1 - str - value</string></item>
+					<item><string>constructor - array1 - str1 - value</string></item>
+					<item><string>constructor - array1 - str2 - value</string></item>
+					<item><string>constructor - array1 - str3 - value</string></item>
+					<item><string>constructor - array1 - str4 - value</string></item>
+					<item><ref>createdate</ref></item>
+				</array>
+			</property>
+			
+			<property>
+				<set>
+					<item><string>constructor - set - str - value</string></item>
+					<item><string>constructor - set - str1 - value</string></item>
+					<item><string>constructor - set - str2 - value</string></item>
+					<item><string>constructor - set - str3 - value</string></item>
+					<item><string>constructor - set - str4 - value</string></item>
+					<item><ref>createdate</ref></item>
+				</set>
+			</property>
+			<property>
+				<set>
+					<item><string>constructor - set1 - str - value</string></item>
+					<item><string>constructor - set1 - str1 - value</string></item>
+					<item><string>constructor - set1 - str2 - value</string></item>
+					<item><string>constructor - set1 - str3 - value</string></item>
+					<item><string>constructor - set1 - str4 - value</string></item>
+					<item><ref>createdate</ref></item>
+				</set>
+			</property>
+			
+			<property>
+				<map>
+					<key name = "str"><string>constructor - map - str - value</string></key>
+					<key name = "str1"><string>constructor - map - str1 - value</string></key>
+					<key name = "str2"><string>constructor - map - str2 - value</string></key>
+					<key name = "str3"><string>constructor - map - str3 - value</string></key>
+					<key name = "str4"><string>constructor - map - str4 - value</string></key>
+					<key name = "createDate"><ref>createdate</ref></key>
+				</map>
+			</property>
+			
+			<property>
+				<map>
+					<key name = "str"><string>constructor - map1 - str - value</string></key>
+					<key name = "str1"><string>constructor - map1 - str1 - value</string></key>
+					<key name = "str2"><string>constructor - map1 - str2 - value</string></key>
+					<key name = "str3"><string>constructor - map1 - str3 - value</string></key>
+					<key name = "str4"><string>constructor - map1 - str4 - value</string></key>
+					<key name = "createDate"><ref>createdate</ref></key>
+				</map>
+			</property>
+			
+			<property>
+				<list>
+					<item><string>constructor - list - str - value</string></item>
+					<item><string>constructor - list - str1 - value</string></item>
+					<item><string>constructor - list - str2 - value</string></item>
+					<item><string>constructor - list - str3 - value</string></item>
+					<item><string>constructor - list - str4 - value</string></item>
+					<item><ref>createdate</ref></item>
+				</list>
+			</property>
+			
+			<property>
+				<list>
+					<item><string>constructor - list1 - str - value</string></item>
+					<item><string>constructor - list1 - str1 - value</string></item>
+					<item><string>constructor - list1 - str2 - value</string></item>
+					<item><string>constructor - list1 - str3 - value</string></item>
+					<item><string>constructor - list1 - str4 - value</string></item>
+					<item><ref>createdate</ref></item>
+				</list>
+			</property>
+		</constructor>
+	</component>
+	
+	<!-- 四种集合类型,分别出现多个的测试; 测试setter -->
+	<component id = "smcms" class = "demo.component.SetterMethodCollectionModel">
+		<setter name = "array">
+			<property>
+				<array type = "java.lang.Object">
+					<item><string>setter - array - str - value</string></item>
+					<item><string>setter - array - str1 - value</string></item>
+					<item><string>setter - array - str2 - value</string></item>
+					<item><string>setter - array - str3 - value</string></item>
+					<item><string>setter - array - str4 - value</string></item>
+					<item><ref>createdate</ref></item>
+				</array>
+			</property>
+		</setter>
+		<setter name = "array1">
+			<property>
+				<array type = "java.lang.Object">
+					<item><string>setter - array1 - str - value</string></item>
+					<item><string>setter - array1 - str1 - value</string></item>
+					<item><string>setter - array1 - str2 - value</string></item>
+					<item><string>setter - array1 - str3 - value</string></item>
+					<item><string>setter - array1 - str4 - value</string></item>
+					<item><ref>createdate</ref></item>
+				</array>
+			</property>
+		</setter>
+		<setter name = "set">
+			<property>
+				<set>
+					<item><string>setter - set - str - value</string></item>
+					<item><string>setter - set - str1 - value</string></item>
+					<item><string>setter - set - str2 - value</string></item>
+					<item><string>setter - set - str3 - value</string></item>
+					<item><string>setter - set - str4 - value</string></item>
+					<item><ref>createdate</ref></item>
+				</set>
+			</property>
+		</setter>
+		<setter name = "set1">
+			<property>
+				<set>
+					<item><string>setter - set1 - str - value</string></item>
+					<item><string>setter - set1 - str1 - value</string></item>
+					<item><string>setter - set1 - str2 - value</string></item>
+					<item><string>setter - set1 - str3 - value</string></item>
+					<item><string>setter - set1 - str4 - value</string></item>
+					<item><ref>createdate</ref></item>
+				</set>
+			</property>
+		</setter>
+		<setter name = "map">
+			<property>
+				<map>
+					<key name = "str"><string>setter - map - str - value</string></key>
+					<key name = "str1"><string>setter - map - str1 - value</string></key>
+					<key name = "str2"><string>setter - map - str2 - value</string></key>
+					<key name = "str3"><string>setter - map - str3 - value</string></key>
+					<key name = "str4"><string>setter - map - str4 - value</string></key>
+					<key name = "createDate"><ref>createdate</ref></key>
+				</map>
+			</property>
+		</setter>
+		<setter name = "map1">
+			<property>
+				<map>
+					<key name = "str"><string>setter - map1 - str - value</string></key>
+					<key name = "str1"><string>setter - map1 - str1 - value</string></key>
+					<key name = "str2"><string>setter - map1 - str2 - value</string></key>
+					<key name = "str3"><string>setter - map1 - str3 - value</string></key>
+					<key name = "str4"><string>setter - map1 - str4 - value</string></key>
+					<key name = "createDate"><ref>createdate</ref></key>
+				</map>
+			</property>
+		</setter>
+		<setter name = "list">
+			<property>
+				<list>
+					<item><string>setter - list - str - value</string></item>
+					<item><string>setter - list - str1 - value</string></item>
+					<item><string>setter - list - str2 - value</string></item>
+					<item><string>setter - list - str3 - value</string></item>
+					<item><string>setter - list - str4 - value</string></item>
+					<item><ref>createdate</ref></item>
+				</list>
+			</property>
+		</setter>
+		<setter name = "list1">
+			<property>
+				<list>
+					<item><string>setter - list1 - str - value</string></item>
+					<item><string>setter - list1 - str1 - value</string></item>
+					<item><string>setter - list1 - str2 - value</string></item>
+					<item><string>setter - list1 - str3 - value</string></item>
+					<item><string>setter - list1 - str4 - value</string></item>
+					<item><ref>createdate</ref></item>
+				</list>
+			</property>
+		</setter>
+	</component>
+	
+	<!-- 四种集合类型,分别出现多个的测试; 测试method -->
+	<component id = "smcmm" class = "demo.component.SetterMethodCollectionModel">
+		<method name = "setArray">
+			<property>
+				<array type = "java.lang.Object">
+					<item><string>method - array - str - value</string></item>
+					<item><string>method - array - str1 - value</string></item>
+					<item><string>method - array - str2 - value</string></item>
+					<item><string>method - array - str3 - value</string></item>
+					<item><string>method - array - str4 - value</string></item>
+					<item><ref>createdate</ref></item>
+				</array>
+			</property>
+		</method>
+		<method name = "setArray1">
+			<property>
+				<array type = "java.lang.Object">
+					<item><string>method - array1 - str - value</string></item>
+					<item><string>method - array1 - str1 - value</string></item>
+					<item><string>method - array1 - str2 - value</string></item>
+					<item><string>method - array1 - str3 - value</string></item>
+					<item><string>method - array1 - str4 - value</string></item>
+					<item><ref>createdate</ref></item>
+				</array>
+			</property>
+		</method>
+		<method name = "setSet">
+			<property>
+				<set>
+					<item><string>method - set - str - value</string></item>
+					<item><string>method - set - str1 - value</string></item>
+					<item><string>method - set - str2 - value</string></item>
+					<item><string>method - set - str3 - value</string></item>
+					<item><string>method - set - str4 - value</string></item>
+					<item><ref>createdate</ref></item>
+				</set>
+			</property>
+		</method>
+		<method name = "setSet1">
+			<property>
+				<set>
+					<item><string>method - set1 - str - value</string></item>
+					<item><string>method - set1 - str1 - value</string></item>
+					<item><string>method - set1 - str2 - value</string></item>
+					<item><string>method - set1 - str3 - value</string></item>
+					<item><string>method - set1 - str4 - value</string></item>
+					<item><ref>createdate</ref></item>
+				</set>
+			</property>
+		</method>
+		<method name = "setMap">
+			<property>
+				<map>
+					<key name = "str"><string>method - map - str - value</string></key>
+					<key name = "str1"><string>method - map - str1 - value</string></key>
+					<key name = "str2"><string>method - map - str2 - value</string></key>
+					<key name = "str3"><string>method - map - str3 - value</string></key>
+					<key name = "str4"><string>method - map - str4 - value</string></key>
+					<key name = "createDate"><ref>createdate</ref></key>
+				</map>
+			</property>
+		</method>
+		<method name = "setMap1">
+			<property>
+				<map>
+					<key name = "str"><string>method - map1 - str - value</string></key>
+					<key name = "str1"><string>method - map1 - str1 - value</string></key>
+					<key name = "str2"><string>method - map1 - str2 - value</string></key>
+					<key name = "str3"><string>method - map1 - str3 - value</string></key>
+					<key name = "str4"><string>method - map1 - str4 - value</string></key>
+					<key name = "createDate"><ref>createdate</ref></key>
+				</map>
+			</property>
+		</method>
+		<method name = "setList">
+			<property>
+				<list>
+					<item><string>method - list - str - value</string></item>
+					<item><string>method - list - str1 - value</string></item>
+					<item><string>method - list - str2 - value</string></item>
+					<item><string>method - list - str3 - value</string></item>
+					<item><string>method - list - str4 - value</string></item>
+					<item><ref>createdate</ref></item>
+				</list>
+			</property>
+		</method>
+		<method name = "setList1">
+			<property>
+				<list>
+					<item><string>method - list1 - str - value</string></item>
+					<item><string>method - list1 - str1 - value</string></item>
+					<item><string>method - list1 - str2 - value</string></item>
+					<item><string>method - list1 - str3 - value</string></item>
+					<item><string>method - list1 - str4 - value</string></item>
+					<item><ref>createdate</ref></item>
+				</list>
+			</property>
+		</method>
+	</component>
+</ct:components>
